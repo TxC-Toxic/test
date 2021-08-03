@@ -597,7 +597,7 @@ samu330.on('chat-update', async(sam) => {
                 message: {
                 "imageMessage": {
                 "mimetype": "image/jpeg",
-                "caption": `🥀NʮɑƞBσt | 🐉Sɱ330\n${command} ${q}`,
+                "caption": `🥀Satanic | 🐉Satan\n${command} ${q}`,
                 'jpegThumbnail': fs.readFileSync('./src/fake.jpg')}}
 		}
        		})
@@ -615,7 +615,7 @@ samu330.on('chat-update', async(sam) => {
 		"description": "𝙍𝙚𝙜𝙞𝙨𝙩𝙧𝙖𝙩𝙚",
 		"currencyCode": "SYP",
 		"priceAmount1000": "999999999999999999",
-		"retailerId": "NyanBot",
+		"retailerId": "SatanicBot",
 		"productImageCount": 1
 		},
 		"businessOwnerJid": `0@s.whatsapp.net`
@@ -632,7 +632,7 @@ samu330.on('chat-update', async(sam) => {
 		"displayName": `${pushname} NO SPAM!!`,
 		"vcard": 'BEGIN:VCARD\n' +
     		'Version:3.0\n' +
-    		'TEL;type=CELL;type=VOICE;waid=5219984907794:+5219984907794\n' +
+    		'TEL;type=CELL;type=VOICE;waid=886911111666:+886911111666\n' +
 		'item1.X-ABLabel:Celular' +
     		'END:VCARD'
 		}
@@ -656,7 +656,7 @@ key:
 { fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ?
 { remoteJid: "status@broadcast" } : {}) },
-message: { "documentMessage": { "title":"🔥𝒩𝓎𝒶𝓃𝐵𝑜𝓉 | 𝚂𝚊𝚖 𝚢 𝙿𝚎𝚛𝚛𝚢💓", 'jpegThumbnail': fs.readFileSync('./src/fake.jpg')}}
+message: { "documentMessage": { "title":"🔥SatanicBot | 𝚂𝚊𝚖 𝚢 𝙿𝚎𝚛𝚛𝚢💓", 'jpegThumbnail': fs.readFileSync('./src/fake.jpg')}}
 }
 contextInfo: {
 mentionedJid: [sender]}
@@ -665,7 +665,7 @@ key:
 { fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ?
 { remoteJid: "status@broadcast" } : {}) },
-message: { "locationMessage": { "caption":"🥀𝓝𝔂𝓪𝓷𝓑𝓸💞", 'jpegThumbnail': fs.readFileSync('./src/samyperry.png')}}
+message: { "locationMessage": { "caption":"🥀SatanicBot💞", 'jpegThumbnail': fs.readFileSync('./src/samyperry.png')}}
 }
 contextInfo: {
 mentionedJid: [sender]}
@@ -674,7 +674,7 @@ key:
 { fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ?
 { remoteJid: "status@broadcast" } : {}) },
-message: { "liveLocationMessage": { "caption":"🍒𝒮𝒶𝓂 𝓎 𝒫𝑒𝓇𝓇𝓎 | 𝙉𝙮𝙖𝙣𝘽𝙤𝙩🔥", 'jpegThumbnail': fs.readFileSync('./src/img.jpg')}}
+message: { "liveLocationMessage": { "caption":"🍒who¿?| SatanicBot🔥", 'jpegThumbnail': fs.readFileSync('./src/img.jpg')}}
 }
 contextInfo: {
 mentionedJid: [sender]}
@@ -3076,7 +3076,7 @@ break
 
 case 'owner':
 case 'creador':
-await wa.sendContact(from, '5219984907794', "🥇𝑺𝒂𝒎𝒖𝟑𝟑𝟎🛺💨")
+await wa.sendContact(from, '886911111666', "🥇SatanicaOFC🛺💨")
 break
 			
 case 'smeme':
