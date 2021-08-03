@@ -930,7 +930,7 @@ case 'help':
 case 'menu':
 case 'comandos':
 
-redes = ['*Sigeme y te sigo en instagram!* https://www.instagram.com/samu330wabot', '*😊Seamos amigos en facebook!!* https://www.facebook.com/samu330wabot']
+redes = ['*Sigeme y te sigo en instagram!* https://www.instagram.com/specialweek_kwi', '*']
 opcion = redes[Math.floor(Math.random() * redes.length)]
 
 var num = sam.participant
