@@ -82,7 +82,7 @@ const fake = 'Satanics'
 var public = config.public
 ////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
 conn.connect()
-const samu330 = conn.samu330
+const SatanicaXV = conn.SatanicaXV
 ////////////▶ 𝐒𝐚𝐦𝐮𝟑𝟑𝟎 | 𝐒𝐚𝐦 𝐲 𝐏𝐞𝐫𝐫𝐲
 const sleep = async (ms) => {
     return new Promise(resolve => setTimeout(resolve, ms));
