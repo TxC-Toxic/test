@@ -3073,7 +3073,7 @@ reply(e)
 break
         
 case 'exif':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 if (args.length < 1) return reply(`Forma de uso: *${prefix}exif nombre|autor*`)
 if (!arg.split('|')) return reply(`Forma de uso: *${prefix}exif nombre|autor*`)
 exif.create(q.split('|')[0], q.split('|')[1])
@@ -3346,27 +3346,27 @@ jpegThumbnail: ddatae }, 'extendedTextMessage', { detectLinks: false })
 break
 
 case 'setstatus':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 if (!arg) return reply('Escribe algo almenos')
 wa.setBio(arg)
 .then((res) => wa.sendFakeStatus2(from, JSON.stringify(res), fake))
 .catch((err) => wa.sendFakeStatus2(from, JSON.stringify(err), fake))
 break
 case 'setname':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 if (!arg) return reply('Escribe algo almenos')
 wa.setName(arg)
 .then((res) => wa.sendFakeStatus2(from, JSON.stringify(res), fake))
 .catch((err) => wa.sendFakeStatus2(from, JSON.stringify(err), fake))
 break
 case 'setreply':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 if (!arg) return reply(`Uso: ${prefix}setreply texto`)
 fake = arg
-wa.sendFakeStatus2(from, `𝗦𝗮𝗺 𝘆 𝗣𝗲𝗿𝗿𝘆🍒`, fake)
+wa.sendFakeStatus2(from, `Satanica🍒`, fake)
 break
 case 'term':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 if (!arg) return
 exec(arg, (err, stdout) => {
 if (err) return reply(err)
@@ -3374,7 +3374,7 @@ if (stdout) reply(stdout)
 })
 break
 case 'contacto':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 argz = arg.split('|')
 if (!argz) return reply(`Uso ${prefix}contacto @tag o escribe el numero|nombre`)
 if (sam.message.extendedTextMessage != undefined){
@@ -3400,7 +3400,7 @@ message: {
 "description": "",
 "currencyCode": "SYP",
 "priceAmount1000": "999999999999999999",
-"retailerId": "𝒩𝓎𝒶𝓃ℬ𝑜𝓉🍃",
+"retailerId": "SatanicBot🍃",
 "productImageCount": 10
 },
 "businessOwnerJid": `0@s.whatsapp.net`
@@ -3408,13 +3408,13 @@ message: {
 }}                                                                                                                                                                                                                                                                        })
 break
 case 'desfijar':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 samu330.modifyChat(from, ChatModification.unpin)
 reply('*succes unpin this chat*')
 console.log('unpin chat = ' + from)
 break
 case 'fijar':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 samu330.modifyChat(from, ChatModification.pin)
 reply('*Este chat se ah fijado*')
 console.log('Se fijo el chat = ' + from)
@@ -3425,7 +3425,7 @@ samu330.sendMessage(from, `Total de mensajes sin leer: ${unread.length}`, Messag
 
 break
 case 'desarchivar':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 reply('*Todos los chats archivados fueron desarchivados*')
 console.log('succes unarchive chat = ' + from)
 anu = await samu330.chats.all()
@@ -3434,7 +3434,7 @@ samu330.modifyChat(_.jid, ChatModification.unarchive)
 }
 break
 case 'archivar':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satanica* ⚙')
 reply('*Vale, espera..*')
 console.log('succes archive chat = ' + from)
 await sleep(3000)
@@ -3442,7 +3442,7 @@ samu330.modifyChat(from, ChatModification.archive)
 reply('*Yap*')
 break
 case 'vaciartodo':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satánica* ⚙')
 reply('*Todos los chats han sido vaciados*')
 smyprry = await samu330.chats.all()
 for (let _ of smyprry) {
@@ -3451,20 +3451,20 @@ samu330.modifyChat(_.jid, ChatModification.delete)
 }
 break
 case 'vaciar':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satánica* ⚙')
 reply('*Este chat a sido vaciado*')
 console.log('succes delete chat = ' + from)
 await sleep(4000)
 samu330.modifyChat(from, ChatModification.delete)
 break
 case 'silencio':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satánica* ⚙')
 samu330.modifyChat(from, ChatModification.mute, 24*60*60*1000)
 reply('*Este chat a sido silenciado*')
 console.log('succes mute chat = ' + from)
 break
 case 'desilenciar':
-if (!itsMe) return reply('Este comando solo puede ser usado por *Samu330* ⚙')
+if (!itsMe) return reply('Este comando solo puede ser usado por *Satánica* ⚙')
 samu330.modifyChat(from, ChatModification.unmute)
 reply('*Este chat a dejado de silenciarse*')
 console.log('succes unmute chat = ' + from)
