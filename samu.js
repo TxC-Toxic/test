@@ -142,7 +142,7 @@ message: {
 },
 "title": `🚫No se permiten las llamadas🚫`,
 "description": "",
-"currencyCode": "SYP",
+"currencyCode": "EUR",
 "priceAmount1000": "999999999999999999",
 "retailerId": "",
 "productImageCount": 999
@@ -3016,12 +3016,6 @@ if(isNaN(edad)) return await reply('*La edad es un numero🙄*!!')
 if (nombre.length >= 10) return reply(`*Tu nombre es acaso un tren?*\nUn nombre no puede tener mas de *10* letras`)
 if (edad > 30) return reply(`Uuuu, yastas viejito:c\n*Lo siento pero no puedo registrarte si eres mayor de 30 años*`)
 if (edad < 13) return reply(`Eres menor de 13 años, no puedo hacer un registro tuyo lo siento.\n*Si quieres muestrame una autorizacion de tus padres diciendo que puedes pasar tiempo usando este bot para que pueda aceptarte:d*`)
-try {
-ppimg = await samu330.getProfilePicture(`${sender.split('@')[0]}@s.whatsapp.net`)
-} catch {
-
-ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
-}
 veri = sender                                                
 addRegisteredUser(sender, nombre, edad, time, serialUser)
 try {
@@ -4308,7 +4302,7 @@ reply(`error\n\n${err}`)
 fs.unlinkSync(ran)
 } else {
 buffer = fs.readFileSync(ran)
-samu330.sendMessage(from, buffer, MessageType.image, {quoted: sam, caption: '𝗦𝗮𝗺 𝘆 𝗣𝗲𝗿𝗿𝘆🍒'})
+samu330.sendMessage(from, buffer, MessageType.image, {quoted: sam, caption: 'SATANICBOT🍒'})
 fs.unlinkSync(ran)
 }
 })
@@ -4322,7 +4316,7 @@ owgi = await samu330.downloadAndSaveMediaMessage(ger)
 data = await imgbb("b0fc132474ca03ee7898fd5cac7275fe", owgi)
 anu = await getJson(`https://api.lolhuman.xyz/api/convert/webptomp4?apikey=${api}&img=${data.display_url}`)
 result = await getBuffer(anu.result)
-samu330.sendMessage(from, result, video, {quoted: ftoko, caption: '𝗦𝗮𝗺 𝘆 𝗣𝗲𝗿𝗿𝘆🍒', mimetype: 'video/gif'})
+samu330.sendMessage(from, result, video, {quoted: ftoko, caption: 'SATANICBOT🍒', mimetype: 'video/gif'})
 
 break
 case 'toptt':
