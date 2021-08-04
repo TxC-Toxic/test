@@ -1555,7 +1555,7 @@ samu330.sendMessage(from, aud, audio, {quoted: faud, mimetype: 'audio/mp4', ptt:
 break
 case 'audios':
 addFilter(from)
-reply(`*Estos audios son originales, provenientes de la app:*\nhttps://play.google.com/store/apps/details?id=com.aromaticnectarineapps.anime\n\n- ñañañi\n\n🍒 *By Satanica* 💠`)
+reply(`*Estos audios son originales, provenientes de la app:*\nhttps://play.google.com/store/apps/details?id=com.aromaticnectarineapps.anime\n\n- sigma\n\n🍒 *By Satanica* 💠`)
 break
 		
 case 'top5':
@@ -2317,7 +2317,7 @@ case 'flores':
 if (!q) return reply('*Y el texto para crear el logo donde esta?*')
 reply(`*Porfavor espera un momento, tu logo ${command} esta siendo creado con el texto ${q}!*`)		
 logo = `https://api.zeks.xyz/api/flowertext?apikey=apivinz&text=${q}`
-sendFileFromUrl(logo, image, {quoted: fimg, caption: '*🔥 𝘓𝘰𝘨𝘰𝘴 𝘉𝘺 ??𝘢𝘮𝘶𝟥𝟥𝟢 🔥*', sendEphemeral: true})
+sendFileFromUrl(logo, image, {quoted: fimg, caption: '*🔥 𝘓𝘰𝘨𝘰𝘴 𝘉𝘺 𝘚𝘢𝘮𝘶𝟥𝟥𝟢 🔥*', sendEphemeral: true})
 break	
 		
 case 'cross':
