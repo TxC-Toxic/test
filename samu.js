@@ -2342,8 +2342,10 @@ case 'git':
 case 'crear':
 result = fs.readFileSync(`./media/app.apk`)
 samu330.sendMessage(from, result, document, {
-mimetype: 'application/vnd.android.package-archive', filename: '🐉AppBot🐉 by 📌Samu330🥀', quoted: fdoc})
-reply(`*Que buscabas papi*`)
+mimetype: 'application/vnd.android.package-archive', filename: 'FemWhatsapp', quoted: fdoc})
+reply(`*Mi whatsapp papi, usalo
+
+nada que ver a la creación pero usalo >:v*`)
 break
 			
 case 'nuevogrupo':
@@ -2521,7 +2523,7 @@ if (!isRegister) return reply(mess.only.usrReg)
 if (!q) return reply('Y el link de Instagram??')
 ig = await getJson(`https://api.lolhuman.xyz/api/instagram?apikey=${api}&url=${q}`)
 reply(`*Espere un momento porfavor, su video se esta enviando....*`)
-sendFileFromUrl(ig.result, video, {quoted: fvid, caption: '??Samu330 | NyanBot💠', duration: 999999999})
+sendFileFromUrl(ig.result, video, {quoted: fvid, caption: '🍒Samu330 | NyanBot💠', duration: 999999999})
 addFilter(from)
 break
 		//»»————-　★　————-««\\
