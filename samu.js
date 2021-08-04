@@ -2207,7 +2207,6 @@ if (!isRegister) return samu330.sendMessage(from, assistant, image, { quoted: no
 if (args.length == 0) return reply(`Ejemplo: ${prefix + command} Me olvide de vivir`)
 reply('*Espere un momento...*')
 query = args.join(' ')
-assistant = fs.readFileSync('./src/img.jpg')
 try {
 get_result = await getJson(`https://api.lolhuman.xyz/api/ytplay?apikey=ec35353a991a258b05876861&query=${query}`)
 get_result = get_result.result
