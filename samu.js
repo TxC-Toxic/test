@@ -635,7 +635,7 @@ function addMetadata(packname, author) {
                 message: {
                 "imageMessage": {
                 "mimetype": "image/jpeg",
-                "caption": `🦈Gawr Gura Bot 💎 | 💎Satan🦈\n${command} ${q}`,
+                "caption": `🦈Gawr Gura Bot 💎 | Satan🦈\n${command} ${q}`,
                 'jpegThumbnail': fs.readFileSync('./src/fake.jpg')}}
 		}
        		})
@@ -721,7 +721,7 @@ key:
 { fromMe: false,
 participant: `0@s.whatsapp.net`, ...(from ?
 { remoteJid: "status@broadcast" } : {}) },
-message: { "videoMessage": { "caption":"🌺Ｓａｍ ｙ Ｐｅｒｒｙ🌺", 'jpegThumbnail': fs.readFileSync('./src/help.jpg')}}
+message: { "videoMessage": { "caption":"🌺SATAN Y ELI.HOPE🌺", 'jpegThumbnail': fs.readFileSync('./src/help.jpg')}}
 }
 contextInfo: {
 mentionedJid: [sender]}
@@ -1977,7 +1977,7 @@ if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0)
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('Satanica 💎', 'Gawr Gura Bot 🦈')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('GAWR GURA BOT 🦈', 'Satanica')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: sam})
 									fs.unlinkSync(media)	
