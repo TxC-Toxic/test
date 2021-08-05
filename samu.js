@@ -1962,7 +1962,7 @@ case 'sticker':
 case 's':
 case 'stiker':
 if (!isRegister) return reply(mess.only.usrReg)
-if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0) {
+if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0) {
 						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await samu330.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
@@ -1987,11 +1987,11 @@ if ((isMedia && !mek.message.videoMessage || isQuotedImage) && args.length == 0)
 								/*samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
 								fs.unlinkSync(media)
 								fs.unlinkSync(ran)*/
-							})
+							}) 
 							.addOutputOptions([`-vcodec`,`libwebp`,`-vf`,`scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
 							.toFormat('webp')
 							.save(ran)
-					} else if ((isMedia && mek.message.videoMessage.seconds < 11 || isQuotedVideo && mek.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
+					} else if ((isMedia && sam.message.videoMessage.seconds < 11 || isQuotedVideo && sam.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
 						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
 						const media = await samu330.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
