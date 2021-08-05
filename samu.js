@@ -2037,7 +2037,7 @@ if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0)
 							exec(`ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=20 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${ranw}`, (err) => {
 								fs.unlinkSync(ranp)
 								if (err) return reply(mess.error.stick)
-								exec(`webpmux -set exif ${addMetadata('GAWR GURA BOT 🦈', 'Satanica')} ${ranw} -o ${ranw}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('GAWR GURA BOT', 'Satanica')} ${ranw} -o ${ranw}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									samu330.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: sam})
 									fs.unlinkSync(ranw)
@@ -3168,7 +3168,7 @@ pic = await samu330.getProfilePicture(mentioned[0])
 pic = 'https://i.ibb.co/Tq7d7TZ/age-hananta-495-photo.png'
 }
 thumb = await getBuffer(pic)
-samu330.sendMessage(from, thumb, MessageType.image, {caption: '𝗦𝗮𝗺 𝘆 𝗣𝗲𝗿𝗿𝘆🍒'})
+samu330.sendMessage(from, thumb, MessageType.image, {caption: '𝗦𝗮𝗺 𝘆 𝗣??𝗿𝗿𝘆🍒'})
 }
 addFilter(from)
 break
