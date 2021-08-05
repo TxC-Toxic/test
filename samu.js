@@ -1978,7 +1978,7 @@ if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0)
 							})
 							.on('end', function () {
 								console.log('Finish')
-								exec(`webpmux -set exif ${addMetadata('SatanicaXV', 'Gawr Gura Bot 🦈')} ${ran} -o ${ran}`, async (error) => {
+								exec(`webpmux -set exif ${addMetadata('Satanica 💎', 'Gawr Gura Bot 🦈')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
 									samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: sam})
 									fs.unlinkSync(media)	
