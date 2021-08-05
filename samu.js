@@ -252,9 +252,8 @@ message: {
 //leave
 }  else if (anu.action == 'remove') {
 num = anu.participants[0]
-teks = `_Weno ps.... amm😪...  @${num.split('@')[0]} se nos fue, ni llorar es bueno:)_
-_*Ojala y le baya bien, y mas despues..... que lo atropelle un tren!!🚉🤣*_
-*No se awiten gente, esten seguros que nadie lo extrañara:D*`
+teks = `_Este weon de @${num.split('@')[0]} Se fue_*_
+*Sayonara Baka, aparte oila a obo el maje 🦈*`
 samu330.sendMessage(mdata.id, teks, MessageType.text,{ contextInfo: {"mentionedJid": [num]}})
 
 } else if (anu.action == 'promote') {
