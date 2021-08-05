@@ -142,7 +142,7 @@ message: {
 },
 "title": `🚫No se permiten las llamadas🚫`,
 "description": "",
-"currencyCode": "EUR",
+"currencyCode": "SYP",
 "priceAmount1000": "999999999999999999",
 "retailerId": "",
 "productImageCount": 999
@@ -247,7 +247,7 @@ message: {
 "productImageCount": 999
 },                          
 "businessOwnerJid": `0@s.whatsapp.net`
-}}}, caption: `😙Hola, @${num.split('@')[0]}, _*Bienvenido a ${mdata.subject}, esperamos que te la pases a gusto en este grupo✨*_\n\n_Recuerda siempre seguir las reglas y mantener una formalidad respetuosa_😉\n\nSon las *${jm}* del *${calender}*\n\n${mdata.desc}`, contextInfo: { mentionedJid: [num] }})
+}}}, caption: `😙Hola, @${num.split('@')[0]}, _*Bienvenido a ${mdata.subject}, Lee las reglas porfis✨*_\n\n_Se respetuoso con el bot_\n\nSon las *${jm}* del *${calender}*\n\n${mdata.desc}`, contextInfo: { mentionedJid: [num] }})
 })
 //leave
 }  else if (anu.action == 'remove') {
@@ -999,7 +999,7 @@ ${bodyM} ${prefix}audios *(Audios)*
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::                                                
 ¦:
 ¦:         . : 🐬En proceso🐬 : .
-¦:         🔥❣️Eli.Hope¿?❣️🔥
+¦:         🔥❣️Eli Hope¿?❣️🔥
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 *̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳
 	🌸 ị¡-𝐒𝐚ᷤ𝐭𝐚ͤ𝐧𝐢̽𝐜𝐚̊𝐎𝐅𝐂ꫵ₆⁶₆.il 🌸
@@ -1011,6 +1011,7 @@ var _0x56da=['367342lxQRgg','relayWAMessage','52224EUhLvZ','readFileSync','31843
 samu330.sendMessage(from, fs.readFileSync('./src/ara.png'), image, {quoted: ftoko, caption: Menu, thumbnail: fs.readFileSync('./src/ara.png'), sendEphemeral: true})
 }
 break
+
 case 'menu2':
 if (!isRegister) return samu330.sendMessage(from, assistant, image, { quoted: noreg, caption: `Hola, ${timeFt}.\n*Gawr gura*.\n\nAl parecer no estas registrado en _*Gawr Gura*_, Para registrarte usa el comando: *${prefix}reg*.`, thumbnail: assistant, contextInfo: {"forwardingScore": 999, "isForwarded": true}})
 stc = `╭⸻⃞✫꯭𝙈꯭𝙀꯭𝙉꯭𝙐꯭✫⃞⸻╮
