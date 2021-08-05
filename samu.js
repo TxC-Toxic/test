@@ -1963,7 +1963,7 @@ case 's':
 case 'stiker':
 if (!isRegister) return reply(mess.only.usrReg)
 if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0) {
-						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(sam).replace('quotedM','m')).message.extendedTextMessage.contextInfo : sam
 						const media = await samu330.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
 						await ffmpeg(`./${media}`)
@@ -1980,19 +1980,19 @@ if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0)
 								console.log('Finish')
 								exec(`webpmux -set exif ${addMetadata('SatanicaXV', 'Gawr Gura Bot 🦈')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
+									samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: sam})
 									fs.unlinkSync(media)	
 									fs.unlinkSync(ran)	
 								})
-								/*samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
+								/*samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: sam})
 								fs.unlinkSync(media)
 								fs.unlinkSync(ran)*/
-							}) 
+							})
 							.addOutputOptions([`-vcodec`,`libwebp`,`-vf`,`scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=white@0.0, split [a][b]; [a] palettegen=reserve_transparent=on:transparency_color=ffffff [p]; [b][p] paletteuse`])
 							.toFormat('webp')
 							.save(ran)
 					} else if ((isMedia && sam.message.videoMessage.seconds < 11 || isQuotedVideo && sam.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.seconds < 11) && args.length == 0) {
-						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						const encmedia = isQuotedVideo ? JSON.parse(JSON.stringify(sam).replace('quotedM','m')).message.extendedTextMessage.contextInfo : sam
 						const media = await samu330.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
 						reply(mess.wait)
@@ -2011,11 +2011,11 @@ if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0)
 								console.log('Finish')
 								exec(`webpmux -set exif ${addMetadata('GAWR GURA BOT 🦈', 'Satanica')} ${ran} -o ${ran}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
+									samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: sam})
 									fs.unlinkSync(media)
 									fs.unlinkSync(ran)
 								})
-								/*samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
+								/*samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: sam})
 								fs.unlinkSync(media)
 								fs.unlinkSync(ran)*/
 							})
@@ -2023,7 +2023,7 @@ if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0)
 							.toFormat('webp')
 							.save(ran)
 					} else if ((isMedia || isQuotedImage) && args[0] == 'nobg') {
-						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(sam).replace('quotedM','m')).message.extendedTextMessage.contextInfo : sam
 						const media = await samu330.downloadAndSaveMediaMessage(encmedia)
 						ranw = getRandom('.webp')
 						ranp = getRandom('.png')
@@ -2040,14 +2040,14 @@ if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0)
 								if (err) return reply(mess.error.stick)
 								exec(`webpmux -set exif ${addMetadata('GAWR GURA BOT 🦈', 'Satanica')} ${ranw} -o ${ranw}`, async (error) => {
 									if (error) return reply(mess.error.stick)
-									samu330.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
+									samu330.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: sam})
 									fs.unlinkSync(ranw)
 								})
-								//samu330.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: mek})
+								//samu330.sendMessage(from, fs.readFileSync(ranw), sticker, {quoted: sam})
 							})
 						})
 					/*} else if ((isMedia || isQuotedImage) && colors.includes(args[0])) {
-						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo : mek
+						const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(sam).replace('quotedM','m')).message.extendedTextMessage.contextInfo : sam
 						const media = await samu330.downloadAndSaveMediaMessage(encmedia)
 						ran = getRandom('.webp')
 						await ffmpeg(`./${media}`)
@@ -2061,7 +2061,7 @@ if ((isMedia && !sam.message.videoMessage || isQuotedImage) && args.length == 0)
 							.on('end', function () {
 								console.log('Finish')
 								fs.unlinkSync(media)
-								samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: mek})
+								samu330.sendMessage(from, fs.readFileSync(ran), sticker, {quoted: sam})
 								fs.unlinkSync(ran)
 							})
 							.addOutputOptions([`-vcodec`,`libwebp`,`-vf`,`scale='min(320,iw)':min'(320,ih)':force_original_aspect_ratio=decrease,fps=15, pad=320:320:-1:-1:color=${args[0]}@0.0, split [a][b]; [a] palettegen=reserve_transparent=off; [b][p] paletteuse`])
