@@ -936,13 +936,12 @@ var num = sam.participant
 foto = fs.readFileSync('./src/help.jpg')
 fakee = fs.readFileSync('./src/fake.jpg')
 assistant = fs.readFileSync('./src/assistant.jpg')
-const forder = { key : {fromMe: false,participant : "0@s.whatsapp.net", ...(from ? { remoteJid: "5214447000377-1624232428@g.us" } : {})},message: {orderMessage: {itemCount : 999999999,status: 1,surface : 1,message: `🥀ị¡-𝐒𝐚ᷤ𝐭𝐚ͤ𝐧𝐢̽𝐜𝐚̊𝐎𝐅𝐂ꫵ₆⁶₆.il🍒`,orderTitle: 'Satanica',sellerJid: `𝗡𝘆𝗮𝗻𝗕𝗼𝘁🌱`,thumbnail: fs.readFileSync('./src/fake.jpg')}}}
+const forder = { key : {fromMe: false,participant : "0@s.whatsapp.net", ...(from ? { remoteJid: "5214447000377-1624232428@g.us" } : {})},message: {orderMessage: {itemCount : 999999999,status: 1,surface : 1,message: `🥀ị¡-𝐒𝐚ᷤ𝐭𝐚ͤ𝐧𝐢̽𝐜𝐚̊𝐎𝐅𝐂ꫵ₆⁶₆.il🍒`,orderTitle: 'Satanica',sellerJid: `Satanica🌱`,thumbnail: fs.readFileSync('./src/fake.jpg')}}}
 samu330.updatePresence(from, Presence.recording)
 uptime = process.uptime()
-		
 if (!isRegister) return samu330.sendMessage(from, assistant, image, { quoted: noreg, caption: `😊Hola, ${timeFt}.\n*Yo soy Gawr Gura Bot 🦈*, Asistente de *Satanica*!.\n\nAl parecer no estas registrado en _*Gawr Gura*_, Para registrarte usa el comando: *${prefix}reg*.`, thumbnail: assistant, contextInfo: {"forwardingScore": 999, "isForwarded": true}})
 try {		
-Menu = `
+Menu = ` 
 ị¡-𝐒𝐚ᷤ𝐭𝐚ͤ𝐧𝐢̽𝐜𝐚̊𝐎𝐅𝐂ꫵ₆⁶₆.il
 🔐Hola *${pushname}* ${timeFt}
 
@@ -954,10 +953,6 @@ _Tipo de usuario:_ ${tipoDeUsr}
 ┖┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 
 🕐Son las *${hora}*\n\n🍃Hoy es *${week1}  ${calender1}*
-
-${opcion}
-
-======[ *Versión 3.33 ]======
 
 *Comandos usados hoy : ${hit_today.length}*
 
@@ -974,15 +969,6 @@ ${samu} 🏆Numero del Dueño wa.me/+886911111666${samu}
 
 𝗠𝗬 𝗖𝗔𝗡𝗔𝗟 𝗗𝗘 𝗬𝗢𝗨𝗧𝗨.𝗕𝗘: https://m.youtube.com/channel/UC8yq2vREgBFz5Vi_51QNX9g
 
-⍣ *BOT INFO* ⍣
-${samu}◦ 🌐Navegador :${samu} *${samu330.browserDescription[1]}*
-${samu}◦ 📡servidor :${samu} *${samu330.browserDescription[0]}*
-${samu}◦ ✅version :${samu} *${samu330.browserDescription[2]}*
-${samu}◦ 🚄Velocidad :${samu} *${process.uptime()}*
-${samu}◦ 📲Sistema operativo :${samu} *${samu330.user.phone.device_manufacturer}*
-${samu}◦ 🪀version de${samu} *WhatsApp* : *${samu330.user.phone.wa_version}*
-
-
 _Lista de MENUs_
 
 ${bodyM} ${prefix}menu1 *(Menu de Media*
@@ -995,12 +981,6 @@ ${bodyM} ${prefix}menu7 *(Comandos de logos)*
 ${bodyM} ${prefix}menu8 *(Comandos para el Owner)*
 ${bodyM} ${prefix}audios *(Audios)*
 
-     -----------------------------------------------
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::                                                
-¦:
-¦:         . : 🐬En proceso🐬 : .
-¦:         🔥❣️Eli Hope¿?❣️🔥
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 *̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳*̳̳̳̳̳̳̳̳̳̳
 	🌸 ị¡-𝐒𝐚ᷤ𝐭𝐚ͤ𝐧𝐢̽𝐜𝐚̊𝐎𝐅𝐂ꫵ₆⁶₆.il 🌸
 ********************************`
